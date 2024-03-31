@@ -1,0 +1,223 @@
+/*General rules*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal ;
+}
+
+/* Section Style*/
+
+section {
+    height: 100vh;
+    color: gainsboro;
+    background-color: hsl(226, 43%, 10%);
+    display: grid;
+    grid-template-columns: repeat(10 ,minmax(auto ,170px));
+    grid-template-rows: repeat(6 ,160px);
+    gap: 5px;
+}
+
+/* Left Section Style*/
+
+.leftsection {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 8px;
+}
+.leftsection .avatar {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 8px;
+    padding: 15px;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+}
+.leftsection .avatar .logo {
+    width: 55px;
+    height: 55px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftsection .avatar .logo img {
+    width: 50px;
+}
+.leftsection .text {
+    margin-top: 20px;
+}
+.leftsection .text h5 {
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: hsl(236, 100%, 87%);
+}
+.leftsection .text h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+.leftsection .times-list {
+    padding: 15px;
+    font-size: 13px;
+    color: hsl(235, 45%, 61%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.leftsection .times-list h4 {
+    cursor: pointer;
+    width: fit-content;
+}
+.leftsection .times-list h4.active {
+    color: white;
+}
+.leftsection .times-list h4:hover {
+    color: whitesmoke;
+}
+/* Icons Style*/
+
+.cards .card .icons {
+    border-radius: 8px 8px 0 0;
+    text-align:right;
+    overflow: hidden;
+    height: 20%;
+}
+.cards .card .work {
+    background-color: hsl(15, 100%, 70%);
+}
+.cards .card .play {
+    background-color: hsl(195, 74%, 62%);
+}
+.cards .card .study {
+    background-color: hsl(348, 100%, 68%);
+}
+.cards .card .exercies {
+    background-color: hsl(145, 58%, 55%);
+}
+.cards .card .social {
+    background-color: hsl(264, 64%, 52%);
+}
+.cards .card .selfcare {
+    background-color: hsl(43, 84%, 65%);
+}
+
+/* Cards Style*/
+
+.top-cards {
+    grid-column: 5/8;
+    grid-row: 2/3;
+    margin-bottom: 8px;
+}
+.bottom-cards {
+    grid-column: 5/8;
+    grid-row: 3/4;
+    margin-top: 8px;
+}
+.cards {
+    display: flex;
+}
+.cards .card {
+    width: 30%;
+    margin-left: 16px;
+}
+.cards .content {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 8px;
+    height: 85%;
+    padding: 15px;
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+.cards .content:hover {
+    background-color: hsl(235, 46%, 32%);
+}
+.cards .card .content .title {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.cards .card .content .title h4 {
+    font-weight: 500;
+}
+.cards .card .content .hours h2 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.cards .card .content .hours span {
+    font-size: 11px;
+    color: hsl(236, 100%, 87%);
+}
+.cards .card .content .hours span h6 {
+    display: inline-block;
+    font-size: 11px;
+}
+
+/* Media Style*/
+
+@media (max-width: 375px) {
+    /* Section Style*/
+    section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftsection {
+        margin: 16px;
+        margin-top: 30px;
+    }
+    .leftsection .avatar {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .leftsection .times-list {
+        flex-direction: row;
+    }
+    .leftsection .text {
+        margin: 0;
+    }
+    .leftsection .text h2 {
+        font-size: 16px;
+    }
+    .leftsection .times-list {
+        justify-content: space-between;
+    }
+    /* Cards Style*/
+    .cards {
+        flex-direction: column;
+        margin: 0;
+    }
+    .cards .card {
+        width: auto;
+        margin-right: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .cards .card .icons {
+        height: 30px;
+    }
+    .cards .card .content {
+        height: auto;
+        padding: 20px;
+    }
+    .cards .card .content .hours {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards .card .content .hours h2 {
+        font-size: 22px;
+        margin: 0;
+    }
+}
