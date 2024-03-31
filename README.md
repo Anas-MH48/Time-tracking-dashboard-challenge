@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Anas-MH48/time-tracking-dashboard-challenge
+- Live Site URL: https://anas-mh48.github.io/time-tracking-dashboard-challenge/
 
 ## My process
 
@@ -41,7 +41,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Anas-MH48](https://www.frontendmentor.io/profile/Anas-MH48)
+- Facebook - [@yourusername](https://www.twitter.com/yourusername)
 
